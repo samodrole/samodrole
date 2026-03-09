@@ -25,8 +25,34 @@ body{
   letter-spacing: .01em;
 }
 
+/* Skip link: visible on focus for keyboard/screen reader users */
+.skip-link{
+  position: absolute;
+  top: -100px;
+  left: 16px;
+  padding: 12px 16px;
+  background: var(--card);
+  color: var(--accent);
+  font-weight: 600;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  z-index: 100;
+  transition: top 0.2s ease;
+}
+.skip-link:focus{
+  top: 16px;
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
 a{ color:inherit; text-decoration:none; }
 a:hover{ color:var(--text); }
+/* Visible focus for keyboard users; no outline on mouse click */
+a:focus-visible,
+button:focus-visible{
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
 
 .page{
   min-height:100%;
@@ -49,6 +75,7 @@ a:hover{ color:var(--text); }
   font-size: 14px;
   padding: 8px 0;
   align-self: center;
+  display: none;
 }
 
 .header-social-links{
@@ -89,7 +116,7 @@ a:hover{ color:var(--text); }
 /* Hero Section: 6-column grid */
 .hero-section{
   margin-bottom: 48px;
-  min-height: 70vh;
+  min-height: 62vh;
   display: flex;
   align-items: center;
 }
@@ -323,6 +350,7 @@ a:hover{ color:var(--text); }
   width: 100%;
   height: auto;
   min-height: 200px;
+  max-width: 100%;
   display: block;
   border-radius: 4px;
   opacity: 0.85;
@@ -334,6 +362,8 @@ a:hover{ color:var(--text); }
   position: relative;
   z-index: 0;
 }
+/* Preserve aspect ratio and reduce layout shift when width/height set */
+.project-image[width][height]{ height: auto; }
 
 /* Empty/backup state when image is missing or broken */
 .project-link--empty::before{
@@ -425,7 +455,7 @@ a:hover{ color:var(--text); }
 
 /* Responsive: match the "editorial grid" feel, then gracefully stack */
 @media (max-width: 1100px){
-  .hero-section{ min-height: 70vh; }
+  .hero-section{ min-height: 62vh; }
   .hero-grid{ grid-template-columns: repeat(4, 1fr); }
   .dataviz-col{ grid-column: 1; }
   .hero-content{ grid-column: 1 / 5; /* Spans all 4 columns */ }
@@ -438,7 +468,7 @@ a:hover{ color:var(--text); }
   .page{ padding: 22px 18px 30px; }
   .topbar{ flex-direction:column; }
   .header-social-links{ margin-top: 12px; gap: 16px; }
-  .hero-section{ min-height: 70vh; }
+  .hero-section{ min-height: 62vh; }
   .hero-grid{ grid-template-columns: 1fr; gap: 18px; }
   .dataviz-col{ min-height: 200px; }
   .hero-content{ grid-column: 1; padding-top: 0; }

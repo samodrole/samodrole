@@ -1,0 +1,12 @@
+# robots.txt for samodrole.com
+# https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt
+
+User-agent: *
+Allow: /
+
+# Sitemap location (helps Google, Bing, and other crawlers discover all URLs)
+Sitemap: https://samodrole.com/sitemap.xml
+
+# Optional: disallow crawling of non-content paths if you add them later
+# Disallow: /api/
+# Disallow: /admin/

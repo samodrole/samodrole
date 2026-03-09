@@ -2,14 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>SamoDrole.</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Samo Drole — Design. Data visualization. Clarity." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Samo Drole — Design &amp; Data Visualization Portfolio</title>
+  <meta name="description" content="Samo Drole — Design, data visualization, and clarity. Portfolio of data viz and design projects including MotoGP, housing, and Tableau work." />
+  <link rel="canonical" href="https://samodrole.com/" />
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="https://samodrole.com/sitemap.xml" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://samodrole.com/" />
+  <meta property="og:title" content="Samo Drole — Design &amp; Data Visualization" />
+  <meta property="og:description" content="Design. Data visualization. Clarity. Portfolio of data viz and design projects." />
+  <meta property="og:locale" content="en_US" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Samo Drole — Design &amp; Data Visualization" />
+  <meta name="twitter:description" content="Design. Data visualization. Clarity." />
   <link href="https://cdn.jsdelivr.net/npm/modern-normalize@v3.0.1/modern-normalize.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link rel="icon" type="image/png" sizes="32x32" href="src/favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Samo Drole",
+    "url": "https://samodrole.com/",
+    "description": "Design and data visualization portfolio",
+    "sameAs": [
+      "https://www.instagram.com/samo.drole/",
+      "https://twitter.com/samodrole",
+      "https://www.linkedin.com/in/samodrole/"
+    ]
+  }
+  </script>
 </head>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ELB1DTKWJ5"></script>
 <script>
@@ -21,27 +48,25 @@
 </script>
 
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
   <div class="page">
-    <header class="topbar" aria-label="Header">
-      <div class="topbar__brand" aria-label="Brand">
-        <a class="logo" href="/">-</a>
+    <header class="topbar" role="banner">
+      <div class="topbar__brand">
+        <a class="logo" href="/" aria-label="Samo Drole — Home">-</a>
       </div>
-      <section class="header-social-links">
-        <a class="footerlink__chev" href="https://www.instagram.com/samo.drole/" target="_blank" rel="noreferrer">Instagram</a>
-        <a class="footerlink__chev" href="https://twitter.com/samodrole" target="_blank" rel="noreferrer">X</a>
-        <a class="footerlink__chev" href="https://www.linkedin.com/in/samodrole/" target="_blank" rel="noreferrer">Linkedin</a>
-      </section>
+      <nav class="header-social-links" aria-label="Social links">
+        <a class="footerlink__chev" href="https://www.instagram.com/samo.drole/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (opens in new tab)">Instagram</a>
+        <a class="footerlink__chev" href="https://twitter.com/samodrole" target="_blank" rel="noopener noreferrer" aria-label="X, formerly Twitter (opens in new tab)">X</a>
+        <a class="footerlink__chev" href="https://www.linkedin.com/in/samodrole/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)">LinkedIn</a>
+      </nav>
     </header>
 
     <div class="rule" aria-hidden="true"></div>
 
-    <!-- Hero Section: 6 columns (col 1 = dataviz, cols 2-6 = hero) -->
-    <section class="hero-section" aria-label="Hero">
+    <section class="hero-section" aria-labelledby="hero-title">
       <div class="hero-grid">
-
-        <!-- Columns 2-6: Hero content -->
         <div class="hero-content" id="about">
-          <h1 class="hero__title">SamoDrole.</h1>
+          <h1 class="hero__title" id="hero-title">SamoDrole.</h1>
           <p class="hero__lede">
             Design. Data visualization. Clarity.
           </p>
@@ -49,118 +74,115 @@
       </div>
     </section>
 
-    <!-- Content Section: All other content below hero -->
-    <main class="content-grid" aria-label="Main content">
-      
-<!-- Projects list -->
-      <section class="col col--projects" id="projects" aria-label="Projects">
+    <main class="content-grid" id="main-content" role="main" tabindex="-1">
+      <section class="col col--projects" id="projects" aria-labelledby="projects-heading">
         <header class="col__header">
-          <h2 class="col__title">Projects</h2>
+          <h2 class="col__title" id="projects-heading">Projects</h2>
         </header>
         <div class="rule rule--thin" aria-hidden="true"></div>
 
         <!-- Projects grid -->
         <div class="projects-grid">
-          <a href="https://samodrole.com/projects/machines-that-conquered/" target="_blank" rel="noreferrer" class="project-link">
-            <img src="src/projects/motogp.webp" alt="Machines That Conquered" class="project-image">
+          <a href="https://samodrole.com/projects/machines-that-conquered/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View project: Machines That Conquered (opens in new tab)">
+            <img src="src/projects/motogp.webp" alt="Machines That Conquered — data visualization" class="project-image" width="400" height="200" loading="lazy">
             <div class="project-overlay">
               <span class="project-title">Machines That Conquered</span>
               <span class="footerlink__chev">›</span>
             </div>
           </a>
-          <a href="https://samodrole.com/projects/ratecomparator/" target="_blank" rel="noreferrer" class="project-link">
-            <img src="src/projects/ratecomparator.webp" alt="BC Hydro Rate Comparator" class="project-image">
+          <a href="https://samodrole.com/projects/ratecomparator/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View project: BC Hydro Rate Comparator (opens in new tab)">
+            <img src="src/projects/ratecomparator.webp" alt="BC Hydro Rate Comparator" class="project-image" width="400" height="200" loading="lazy">
             <div class="project-overlay">
               <span class="project-title">BC Hydro Rate Comparator</span>
               <span class="footerlink__chev">›</span>
             </div>
           </a>
-          <a href="https://samodrole.com/projects/canadahousing/" target="_blank" rel="noreferrer" class="project-link">
-            <img src="src/projects/canadahousing.webp" alt="Canada Housing Starts by Province" class="project-image">
+          <a href="https://samodrole.com/projects/canadahousing/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View project: Canada Housing Starts by Province (opens in new tab)">
+            <img src="src/projects/canadahousing.webp" alt="Canada Housing Starts by Province" class="project-image" width="400" height="200" loading="lazy">
             <div class="project-overlay">
               <span class="project-title">Canada Housing Starts by Province</span>
               <span class="footerlink__chev">›</span>
             </div>
           </a>
-          <a href="https://samodrole.com/projects/snowfall/" target="_blank" rel="noreferrer" class="project-link">
-            <img src="src/projects/snowfall.webp" alt="Where Snow Meets the Sea" class="project-image">
+          <a href="https://samodrole.com/projects/snowfall/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View project: Where Snow Meets the Sea (opens in new tab)">
+            <img src="src/projects/snowfall.webp" alt="Where Snow Meets the Sea" class="project-image" width="400" height="200" loading="lazy">
             <div class="project-overlay">
               <span class="project-title">Where Snow Meets the Sea</span>
               <span class="footerlink__chev">›</span>
             </div>
           </a>
-          <a href="https://unique-marketing-098490.framer.app/" target="_blank" rel="noreferrer" class="project-link">
-            <img src="src/projects/bobross.webp" alt="In life you need colors" class="project-image">
+          <a href="https://unique-marketing-098490.framer.app/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View project: In life you need colors (opens in new tab)">
+            <img src="src/projects/bobross.webp" alt="In life you need colors" class="project-image" width="400" height="200" loading="lazy">
             <div class="project-overlay">
               <span class="project-title">In life you need colors</span>
               <span class="footerlink__chev">›</span>
             </div>
           </a>
-          <a href="https://public.tableau.com/views/PopcornRankings_01MM2019w17/PopCornRankingNBA?:language=en-US&:embed=y&:showVizHome=no&:display_count=n&:toolbar=hidden" target="_blank" rel="noreferrer" class="project-link">
-            <img src="src/projects/popcorn.webp" alt="Steph Curry stadium popcorn rankings" class="project-image">
+          <a href="https://public.tableau.com/views/PopcornRankings_01MM2019w17/PopCornRankingNBA?:language=en-US&:embed=y&:showVizHome=no&:display_count=n&:toolbar=hidden" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View project: Steph Curry stadium popcorn rankings (opens in new tab)">
+            <img src="src/projects/popcorn.webp" alt="Steph Curry stadium popcorn rankings" class="project-image" width="400" height="200" loading="lazy">
             <div class="project-overlay">
               <span class="project-title">Steph Curry stadium popcorn rankings</span>
               <span class="footerlink__chev">›</span>
             </div>
           </a>
-          <a href="https://public.tableau.com/views/SpaceWalkersMM2019w18/ControlPannel?:display_count=y&:origin=viz_share_link&:showVizHome=no" target="_blank" rel="noreferrer" class="project-link">
-            <img src="src/projects/spacewalkers.webp" alt="International space station spacewalks" class="project-image">
+          <a href="https://public.tableau.com/views/SpaceWalkersMM2019w18/ControlPannel?:display_count=y&:origin=viz_share_link&:showVizHome=no" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View project: International space station spacewalks (opens in new tab)">
+            <img src="src/projects/spacewalkers.webp" alt="International space station spacewalks" class="project-image" width="400" height="200" loading="lazy">
             <div class="project-overlay">
               <span class="project-title">International space station spacewalks</span>
               <span class="footerlink__chev">›</span>
             </div>
           </a>
-          <a href="https://public.tableau.com/views/ThreeYearsofMeetings/ThreeYearsOfMeetings?:language=en-US&:embed=y&:showVizHome=no&:display_count=n&:toolbar=hidden" target="_blank" rel="noreferrer" class="project-link">
-            <img src="src/projects/three-years.webp" alt="Three years of meetings" class="project-image">
+          <a href="https://public.tableau.com/views/ThreeYearsofMeetings/ThreeYearsOfMeetings?:language=en-US&:embed=y&:showVizHome=no&:display_count=n&:toolbar=hidden" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View project: Three years of meetings (opens in new tab)">
+            <img src="src/projects/three-years.webp" alt="Three years of meetings" class="project-image" width="400" height="200" loading="lazy">
             <div class="project-overlay">
               <span class="project-title">Three years of meetings</span>
               <span class="footerlink__chev">›</span>
             </div>
           </a>
-          <a href="https://samodrole.com/projects/MM2023-week9/" target="_blank" rel="noreferrer" class="project-link">
-            <img src="src/projects/Coffee.webp" alt="Caffeine levels in high-street coffees" class="project-image">
+          <a href="https://samodrole.com/projects/MM2023-week9/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View project: Caffeine levels in high-street coffees (opens in new tab)">
+            <img src="src/projects/Coffee.webp" alt="Caffeine levels in high-street coffees" class="project-image" width="400" height="200" loading="lazy">
             <div class="project-overlay">
               <span class="project-title">Caffeine levels in high-street coffees</span>
               <span class="footerlink__chev">›</span>
             </div>
           </a>
-          <a href="https://public.tableau.com/views/B2P_project/MainDash?:language=en-US&:embed=y&:showVizHome=no&:display_count=n&:toolbar=hidden" target="_blank" rel="noreferrer" class="project-link">
-            <img src="src/projects/bridges.webp" alt="Bridges to Prosperity" class="project-image">
+          <a href="https://public.tableau.com/views/B2P_project/MainDash?:language=en-US&:embed=y&:showVizHome=no&:display_count=n&:toolbar=hidden" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View project: Bridges to Prosperity (opens in new tab)">
+            <img src="src/projects/bridges.webp" alt="Bridges to Prosperity" class="project-image" width="400" height="200" loading="lazy">
             <div class="project-overlay">
               <span class="project-title">Bridges to Prosperity</span>
               <span class="footerlink__chev">›</span>
             </div>
           </a>
-          <a href="https://public.tableau.com/views/RolandTR-808/TR-808?:language=en-US&:embed=y&:showVizHome=no&:display_count=n&:toolbar=hidden" target="_blank" rel="noreferrer" class="project-link">
-            <img src="src/projects/Roland TR-808.webp" alt="Roland TR-808 | IronViz" class="project-image">
+          <a href="https://public.tableau.com/views/RolandTR-808/TR-808?:language=en-US&:embed=y&:showVizHome=no&:display_count=n&:toolbar=hidden" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View project: Roland TR-808 IronViz (opens in new tab)">
+            <img src="src/projects/Roland TR-808.webp" alt="Roland TR-808 IronViz" class="project-image" width="400" height="200" loading="lazy">
             <div class="project-overlay">
               <span class="project-title">Roland TR-808 | IronViz</span>
               <span class="footerlink__chev">›</span>
             </div>
           </a>
-          <a href="https://samodrole.com/projects/most_f1_wins/" target="_blank" rel="noreferrer" class="project-link">
-            <img src="src/projects/max.webp" alt="Most F1 Wins" class="project-image">
+          <a href="https://samodrole.com/projects/most_f1_wins/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View project: Most F1 Wins (opens in new tab)">
+            <img src="src/projects/max.webp" alt="Most F1 Wins" class="project-image" width="400" height="200" loading="lazy">
             <div class="project-overlay">
               <span class="project-title">Most F1 Wins</span>
               <span class="footerlink__chev">›</span>
             </div>
           </a>
-          <a href="https://public.tableau.com/views/NorthAmericanBearAttacks_15584112585740/BearsDashboard?:language=en-US&:embed=y&:showVizHome=no&:display_count=n&:toolbar=hidden" target="_blank" rel="noreferrer" class="project-link">
-            <img src="src/projects/wildbear.webp" alt="North American Bear Attacks" class="project-image">
+          <a href="https://public.tableau.com/views/NorthAmericanBearAttacks_15584112585740/BearsDashboard?:language=en-US&:embed=y&:showVizHome=no&:display_count=n&:toolbar=hidden" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View project: North American Bear Attacks (opens in new tab)">
+            <img src="src/projects/wildbear.webp" alt="North American Bear Attacks" class="project-image" width="400" height="200" loading="lazy">
             <div class="project-overlay">
               <span class="project-title">North American Bear Attacks</span>
               <span class="footerlink__chev">›</span>
             </div>
           </a>
-          <a href="https://public.tableau.com/views/RhinoPoaching/RhinoDashboard?:language=en-US&:embed=y&:showVizHome=no&:display_count=n&:toolbar=hidden" target="_blank" rel="noreferrer" class="project-link">
-            <img src="src/projects/rhino.webp" alt="Rhino Poaching" class="project-image">
+          <a href="https://public.tableau.com/views/RhinoPoaching/RhinoDashboard?:language=en-US&:embed=y&:showVizHome=no&:display_count=n&:toolbar=hidden" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View project: Rhino Poaching (opens in new tab)">
+            <img src="src/projects/rhino.webp" alt="Rhino Poaching" class="project-image" width="400" height="200" loading="lazy">
             <div class="project-overlay">
               <span class="project-title">Rhino Poaching</span>
               <span class="footerlink__chev">›</span>
             </div>
           </a>
-          <a href="https://public.tableau.com/views/StateFiscalRankingsMakeoverMonday2019w15/States?:language=en-US&:embed=y&:showVizHome=no&:display_count=n&:toolbar=hidden" target="_blank" rel="noreferrer" class="project-link">
-            <img src="src/projects/states.webp" alt="Are states financially healthy?" class="project-image">
+          <a href="https://public.tableau.com/views/StateFiscalRankingsMakeoverMonday2019w15/States?:language=en-US&:embed=y&:showVizHome=no&:display_count=n&:toolbar=hidden" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View project: Are states financially healthy? (opens in new tab)">
+            <img src="src/projects/states.webp" alt="Are states financially healthy?" class="project-image" width="400" height="200" loading="lazy">
             <div class="project-overlay">
               <span class="project-title">Are states financially healthy?</span>
               <span class="footerlink__chev">›</span>
@@ -172,5 +194,12 @@
       
     </main>
   </div>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ELB1DTKWJ5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ELB1DTKWJ5');
+  </script>
 </body>
 </html>
