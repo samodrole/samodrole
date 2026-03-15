@@ -10,6 +10,7 @@ Visit the live site at [samodrole.com](https://samodrole.com).
 
 | Project | Link |
 |--------|------|
+| Bitcoin died again | [bitcoindiedagain.com](https://bitcoindiedagain.com/) |
 | Machines That Conquered | [samodrole.com/projects/machines-that-conquered](https://samodrole.com/projects/machines-that-conquered/) |
 | BC Hydro Rate Comparator | [samodrole.com/projects/ratecomparator](https://samodrole.com/projects/ratecomparator/) |
 | Canada Housing Starts by Province | [samodrole.com/projects/canadahousing](https://samodrole.com/projects/canadahousing/) |
