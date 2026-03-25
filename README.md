@@ -10,6 +10,7 @@ Visit the live site at [samodrole.com](https://samodrole.com).
 
 | Project | Link |
 |--------|------|
+| Lost in the St. Lawrence | [samodrole.com/projects/st-lawrence-river](https://samodrole.com/projects/st-lawrence-river/) |
 | Bitcoin died again | [bitcoindiedagain.com](https://bitcoindiedagain.com/) |
 | Machines That Conquered | [samodrole.com/projects/machines-that-conquered](https://samodrole.com/projects/machines-that-conquered/) |
 | BC Hydro Rate Comparator | [samodrole.com/projects/ratecomparator](https://samodrole.com/projects/ratecomparator/) |
